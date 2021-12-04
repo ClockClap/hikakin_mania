@@ -1,8 +1,6 @@
 const fs = require('fs');
 const Discord = require('discord.js');
 const {Intents} = require("discord.js");
-const dotenv = require('dotenv');
-dotenv.config();
 
 const client = new Discord.Client({ intents: [Intents.FLAGS.GUILDS, Intents.FLAGS.GUILD_MESSAGES, Intents.FLAGS.DIRECT_MESSAGES], partials: ["CHANNEL"] });
 
@@ -70,4 +68,4 @@ client.on("interactionCreate", async (interaction) => {
     }
 });
 
-client.login(process.env.TOKEN);
+client.login();
