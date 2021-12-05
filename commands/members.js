@@ -4,6 +4,8 @@ module.exports = {
         description: "サーバーにいるメンバーの数を確認できます。",
     },
     async execute(client, interaction) {
-        interaction.reply({ content: `このサーバーには ${interaction.guild.member_count} 人いるなあ、そうに決まってる。`});
+        let members = 0;
+        interaction.guild.members.cache.forEach(() => members++);
+        interaction.reply({ content: `このサーバーには ${members} 人いるなあ、そうに決まってる。`});
     }
 }
