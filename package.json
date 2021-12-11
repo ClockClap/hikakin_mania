@@ -16,5 +16,8 @@
   },
   "engines": {
     "node": "17.x"
+  },
+  "devDependencies": {
+    "node": "^16.13.1"
   }
 }
