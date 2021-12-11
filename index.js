@@ -1,3 +1,9 @@
+const http = require('http');
+http.createServer(function (req, res) {
+    res.write("online");
+    res.end();
+}).listen(8080);
+
 const fs = require('fs');
 const Discord = require('discord.js');
 const {Intents} = require("discord.js");
