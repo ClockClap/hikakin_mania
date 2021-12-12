@@ -26,12 +26,6 @@ client.on('ready', async () => {
     console.log(`Logged in as ${client.user.tag}`);
     const servers = client.guilds.cache.size;
     client.user.setActivity(`/help | ${servers} サーバー`, { type: "COMPETING" });
-    client.guilds.cache.forEach(g => {
-        if(g.id === '907959739072258068') {
-            console.log(g.members.cache.size)
-            console.log(g.memberCount);
-        }
-    });
 });
 
 client.on("guildCreate", async guild => {
