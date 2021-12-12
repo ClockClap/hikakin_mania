@@ -11,7 +11,7 @@ module.exports = {
                     name: interaction.member.tag,
                     icon_url: interaction.member.avatar_url
                 },
-                title: "このサーバーの参加者",
+                title: "全体の人数",
                 description: `${totalMembers}`,
                 color: 0xFF22AA,
                 timestamp: new Date(),
