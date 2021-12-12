@@ -5,7 +5,7 @@ module.exports = {
     },
     async execute(client, interaction) {
         const g = interaction.guild;
-        let totalMembers = g.memberCount;s
+        let totalMembers = g.memberCount;
         await interaction.reply({ embeds: [{
                 author: {
                     name: interaction.member.tag,
