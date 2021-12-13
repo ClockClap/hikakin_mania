@@ -47,6 +47,9 @@ module.exports = {
                     name: "/about",
                     value: "このボットに関する情報がわか、ゥ\n" +
                         "ぉ何かあればこのコマンドを実行したあとに出てくるサポートサーバーまで"
+                },{
+                    name: "/reply",
+                    value: "特定のメッセージに対して返信をさせます"
                 }],
                 timestamp: new Date(),
                 footer: {
