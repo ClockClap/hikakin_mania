@@ -48,7 +48,7 @@ client.on("guildDelete", async guild => {
     client.user.setActivity(`/help | ${servers} サーバー`, { type: "COMPETING" });
 })
 
-client.on('messageCreate', (message) => {
+client.on('messageCreate', message => {
     if (message.author.bot) return;
     if (message.channel.type === 'DM') {
         message.author.send({ content: '何かありましたか？\n' +
@@ -66,7 +66,7 @@ client.on('messageCreate', (message) => {
 })
 
 
-client.on("interactionCreate", async (interaction) => {
+client.on("interactionCreate", async interaction => {
     if (interaction.isCommand()) {
         const command = commands[interaction.toJSON().commandName];
         try {
