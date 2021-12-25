@@ -11,6 +11,9 @@ module.exports = {
     },
     async execute(client, interaction) {
         await interaction.channel.send({ content: interaction.options.getString('input')});
-        await interaction.reply({ content: '指定されたメッセージを投稿しました。' , ephemeral: true });
+        await interaction.reply({ content: '指定されたメッセージを投稿しました。', embeds: [{
+                title: '指定されたメッセージを投稿しました。',
+                color: 0x33DD33
+            }] , ephemeral: true });
     }
 }

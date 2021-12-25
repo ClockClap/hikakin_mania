@@ -119,7 +119,10 @@ client.on("interactionCreate", async interaction => {
             await command.execute(client, interaction);
         } catch (error) {
             console.error(error);
-            await interaction.reply({content: 'エラーが発生しました。', ephemeral: true})
+            await interaction.reply({ embeds: [{
+                    title: 'エラーが発生しました。',
+                    color: 0xDD3333
+                }], ephemeral: true})
         }
     }
 });

@@ -7,8 +7,8 @@ module.exports = {
         interaction.reply({ content: "ヘルプが表示されないのなら **歯車アイコン > テキスト・画像 > チャットで投稿されたリンクのサイト情報を表示する** を有効にしましょう！\n\n" +
                 "https://discord.gg/qeEhjYVfqb", embeds: [{
                 author: {
-                    name: interaction.member.tag,
-                    icon_url: interaction.member.avatar_url
+                    name: interaction.member.user.tag,
+                    icon_url: interaction.member.user.avatarURL()
                 },
                 title: "このボット何？",
                 description: "ヒカマニ鯖向けに作られたボットだなあ、そうに決まってる。ぜひぜひ、みなさんも入れてほしいんです！って言いたいじゃないですか。\n" +
@@ -27,8 +27,8 @@ module.exports = {
                 }],
                 timestamp: new Date(),
                 footer: {
-                    icon_url: client.user.avatar_url,
-                    text: 'hikakin_mania | このボットに関する情報'
+                    icon_url: client.user.avatarURL(),
+                    text: `hikakin_mania | このボットに関する情報`
                 }
         }], ephemeral: true });
     }
