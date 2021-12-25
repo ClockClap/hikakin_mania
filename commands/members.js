@@ -20,12 +20,10 @@ module.exports = {
                     color: 0xFF22AA,
                     fields: [{
                         name: '参加者',
-                        value: `オンライン: ${online.toLocaleString()}\n` +
-                               `${totalMembers.toLocaleString()}`
+                        value: `オンライン: ${online.toLocaleString()}/${totalMembers.toLocaleString()}`
                     },{
                         name: 'ボット',
-                        value: `オンライン: ${onlineBot.toLocaleString()}\n` +
-                               `${bot.toLocaleString()}`
+                        value: `オンライン: ${onlineBot.toLocaleString()}/${bot.toLocaleString()}`
                     }],
                     timestamp: new Date(),
                     footer: {
