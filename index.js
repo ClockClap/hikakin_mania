@@ -78,7 +78,7 @@ client.on('messageCreate', async message => {
         if(c.startsWith("お、勃った") || c.startsWith("お、◯った") || c.startsWith("お、立った")) {
             await message.react('908723732380532796');
         }
-        if(c === '<:nukeru:908733014748590090>') {
+        if(c.includes('<:nukeru:908733014748590090>')) {
             await message.react('908733014748590090');
         }
         if(c.startsWith('嘘だろ')) {
